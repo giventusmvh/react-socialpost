@@ -1,8 +1,10 @@
-export default function Post() {
+const names = ["Given", "Marco"];
+
+export default function Post({ author, body }) {
   return (
-    <div>
-      <p>Maximillian</p>
-      <p>The description will go here</p>
+    <div className="post">
+      <p>{author}</p>
+      <p>{body}</p>
     </div>
   );
 }
